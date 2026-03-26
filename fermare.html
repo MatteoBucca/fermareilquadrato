@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gioco Velocità Quadrato</title>
+    <link rel="stylesheet" href="fermare.css">
+</head>
+<body onload="startGame()">
+
+    <div class="game-container">
+        <div class="controls">
+            <button onmousedown="moveup()" onmouseup="clearmove()">UP</button>
+            
+            <div class="middle-row">
+                <button onmousedown="moveleft()" onmouseup="clearmove()">LEFT</button>
+              
+                <button onmousedown="moveright()" onmouseup="clearmove()">RIGHT</button>
+            </div>
+            
+            <button onmousedown="movedown()" onmouseup="clearmove()">DOWN</button>
+        </div>
+    </div>
+
+    <script src="fermare.js"></script>
+</body>
+</html>
